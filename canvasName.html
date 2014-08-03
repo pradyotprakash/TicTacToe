@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>Canvas</title>
+</head>
+<body>
+<canvas id="myCanvas" width="340" height="150" style="border:1px solid #000000;background-color:red;"></canvas>
+
+<script>
+	var canvasVar = document.getElementById("myCanvas").getContext("2d");
+	canvasVar.strokeStyle = "blue";
+	canvasVar.moveTo(50,50);
+	canvasVar.lineTo(50,100);
+	canvasVar.stroke();
+	canvasVar.beginPath();
+	canvasVar.arc(50,62.5,12.5,Math.PI*1.5,Math.PI/2);
+	canvasVar.stroke();
+	canvasVar.moveTo(80,50);
+	canvasVar.lineTo(80,100);
+	canvasVar.stroke();
+	canvasVar.beginPath();
+	canvasVar.arc(80,62.5,12.5,Math.PI*1.5,Math.PI/2);
+	canvasVar.stroke();
+	canvasVar.moveTo(80,75);
+	canvasVar.lineTo(92.5,100);
+	canvasVar.stroke();
+	canvasVar.moveTo(110,100);
+	canvasVar.lineTo(120,50);
+	canvasVar.stroke();
+	canvasVar.moveTo(120,50);
+	canvasVar.lineTo(130,100);
+	canvasVar.stroke();
+	canvasVar.moveTo(115,75);
+	canvasVar.lineTo(125,75);
+	canvasVar.stroke();
+	canvasVar.moveTo(150,50);
+	canvasVar.lineTo(150,100);
+	canvasVar.stroke();
+	canvasVar.beginPath();
+	canvasVar.arc(150,75,25,Math.PI*1.5,Math.PI*0.5);
+	canvasVar.stroke();
+	canvasVar.moveTo(200,75);
+	canvasVar.lineTo(200,100);
+	canvasVar.stroke();
+	canvasVar.moveTo(190,50);
+	canvasVar.lineTo(200,75);
+	canvasVar.stroke();
+	canvasVar.moveTo(200,75);
+	canvasVar.lineTo(210,50);
+	canvasVar.stroke();
+	canvasVar.rect(230,50,20,50);
+	canvasVar.stroke();
+	canvasVar.moveTo(270,50);
+	canvasVar.lineTo(290,50);
+	canvasVar.stroke();
+	canvasVar.moveTo(280,50);
+	canvasVar.lineTo(280,100);
+	canvasVar.stroke();
+</script>
+</body>
+</html>

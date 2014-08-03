@@ -37,16 +37,16 @@ function changeImage(x,y){
 			if(a[0][2] == a[1][1] && a[1][1] == a[2][0] && a[0][2] != 0 && isGameOver == false)
 				isGameOver = true;
 		}
-	}
 
-	if(isGameOver == true){
-		clickable = false;
-		if(whichState == -1)
-			player = 1;
-		else 
-			player = 2;
-		alert("Player "+player+" wins.\nGame over!\nReset to play again!");
-		return;
+		if(isGameOver == true){
+			clickable = false;
+			if(whichState == -1)
+				player = 1;
+			else 
+				player = 2;
+			alert("Player "+player+" wins.\nGame over!\nReset to play again!");
+			return;
+		}
 	}
 }
 
