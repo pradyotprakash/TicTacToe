@@ -6,13 +6,17 @@ whichState = 1;
 function changeImage(x,y){
 	
 	if(clickable == true){
-		a[x][y] = whichState;
-		++count;
-		var id = x+y;
-		if(whichState == 1)
+		var id = x.toString() + y.toString();
+		if(whichState == 1 && a[x][y] == 0){
 			document.getElementById(id).src = 'cross.jpg';
-		else 
+			a[x][y] = whichState;
+			count++;
+		}
+		else if(whichState == -1 && a[x][y] == 0){
 			document.getElementById(id).src = 'zero.png';
+			a[x][y] = whichState;
+			count++;
+		}
 
 		whichState *= -1;
 		
